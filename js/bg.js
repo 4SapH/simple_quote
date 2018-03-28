@@ -14,8 +14,8 @@ let Bg = (function() {
         keywords     = ['web','design'],
         size    = '1920x1080';
     // let collection_id = '1387057';
-    let collection_id= '173256'
-    endpoint = 'http://source.unsplash.com/collection';
+    let collection_id= '173256';
+    endpoint = 'https://source.unsplash.com/collection';
 
     // let url = `${endpoint}/${size}/?${keywords.join(',')}/`;
     let url = `${endpoint}/${collection_id}/size`;
