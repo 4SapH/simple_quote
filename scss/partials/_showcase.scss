@@ -1,0 +1,31 @@
+#showcase {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.16);
+  // h-length, v-length, blur, spread, colour
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.5);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  padding: 0 2vw;
+//  padding: 0 20px;
+
+  font-size: 20px;
+  p {
+    transition: 0.5s;
+    @media (max-width: $medium-screen) {
+      font-size: 20px;
+    }
+  }
+
+  .button {
+    margin-top: 40px;
+    font-size: 22px;
+    @media (max-width: $medium-screen) {
+      margin-top: 40px;
+      font-size: 22px;
+    }
+  }
+}

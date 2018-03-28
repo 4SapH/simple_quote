@@ -1,0 +1,100 @@
+/*
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #BFB59B;
+  line-height: 1.6; }
+
+.container {
+  z-index: -1;
+  background-color: #191C0E;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  transition: 0.2s;
+  letter-spacing: .1rem; }
+  .container h1 {
+    font-size: 50px;
+    line-height: 1.2; }
+  .container p {
+    font-size: 20px;
+    font-weight: 600; }
+  .container .button {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    border: #BFB59B 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px; }
+    .container .button:hover {
+      background: #BFB59B;
+      color: #191C0E; }
+  .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: black;
+    opacity: 0.6; }
+
+#showcase {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.5);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  padding: 0 2vw;
+  font-size: 20px; }
+  #showcase p {
+    transition: 0.5s; }
+    @media (max-width: 720px) {
+      #showcase p {
+        font-size: 20px; } }
+  #showcase .button {
+    margin-top: 40px;
+    font-size: 22px; }
+    @media (max-width: 720px) {
+      #showcase .button {
+        margin-top: 40px;
+        font-size: 22px; } }
+
+/*# sourceMappingURL=main.css.map */
