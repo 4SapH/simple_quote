@@ -17,16 +17,12 @@ let Bg = (function() {
     let collection_id= '173256';
     endpoint = 'https://source.unsplash.com/collection';
 
-    // let url = `${endpoint}/${size}/?${keywords.join(',')}/`;
     let url = `${endpoint}/${collection_id}/size`;
 
 
     DOM.$container.style.opacity = 0;
     fetch(url)
       .then((data) => { renderImage(data.url); });
-      // .then((resp) => resp.json())
-      // .then(renderImage(data))
-      // .then(() => {$container.style.opacity = 0;});
   }
 
   function renderImage(data) {
