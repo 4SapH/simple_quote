@@ -35,17 +35,16 @@ let Quote = (function () {
   function renderQuote(data) {
     DOM.$quote.opacity = 0;
     setInterval
-    DOM.$quote.innerHTML = data[0].content;
+    DOM.$quote.innerHTML = data[0].content.replace(/<(.|\n)*?>/g, '');
     DOM.$quote.opacity = 1;
+    Twitter.init();
   }
 
-  /* =================== public methods ================== */
   function init() {
     cacheDom();
     getQuote();
   }
 
-  /* =============== export public methods =============== */
   return {
     init: init
   };

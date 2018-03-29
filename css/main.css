@@ -61,6 +61,11 @@ body {
     .container .button:hover {
       background: #BFB59B;
       color: #191C0E; }
+  .container #buttons {
+    margin-top: 20px;
+    width: 100%; }
+  .container [id^=fa] {
+    display: block; }
   .container:before {
     content: "";
     position: absolute;

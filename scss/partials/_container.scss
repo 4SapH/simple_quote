@@ -44,6 +44,15 @@
     }
   }
 
+  #buttons {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  [id^=fa] {
+    display: block;
+  }
+
   &:before {
     content: "";
     position: absolute;
